@@ -5,7 +5,7 @@ from yaml import load, FullLoader
 
 
 class Content(Mapping):
-    __delimeter = r"^(?:-|+){3}\s*$"  # Remember to prefix string with r to denote raw string
+    __delimiter = r"^(?:-|\+){3}\s*$"  # Remember to prefix string with r to denote raw string
     __regex = re.compile(__delimiter, re.MULTILINE)
 
     @classmethod
